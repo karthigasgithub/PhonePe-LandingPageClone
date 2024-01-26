@@ -182,6 +182,25 @@ a:hover{
     
     border: none !important;
   }
+
+  .img-secure{
+
+    position: absolute;
+   margin-top: 30px;
+   width: 200px;
+   height: 220px;
+    margin-left: 160px;
+  }
+
+  .trust-text{
+    position: absolute;
+    margin-top : 50px ;
+    text-align: left;
+    color: rgb(252, 251, 253);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    margin-left: 450px;
+  }
   
   
   
