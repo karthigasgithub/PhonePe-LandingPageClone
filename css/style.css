@@ -106,3 +106,67 @@ a:hover{
   .partner{
     width: 100%;
   }
+
+  .mySwiper{
+
+    margin-top: 70px; 
+  }
+
+  .banner-text{
+    position: absolute;
+    top : 50px ;
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 90px;
+  }
+
+  .banner-para{
+    text-align: left;
+    color: rgba(13, 13, 59, 0.658);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-left: -50px;
+  }
+
+  .banner-btn{
+    margin-top: 30px;
+    background-color: rgba(20, 20, 70, 0.548) !important; 
+    /* outline-width: 0px !important;
+    outline-color: rgba(20, 20, 70, 0.548) !important ; */
+    color: white !important;
+  }
+  .banner-btn2{
+    margin-top: 30px;
+    background-color: rgba(23, 23, 126, 0.829) !important; 
+    /* outline-width: 0px !important;
+    outline-color: rgba(20, 20, 70, 0.548) !important ; */
+    color: white !important;
+  }
+
+  .banner-text-new{
+    position: absolute;
+    top : 65px ;
+    text-align: left;
+    color: rgb(78, 28, 124);
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 118px;
+  }
+
+  
+
+ /* change pagination bullet size */
+.mySwiper .swiper-pagination-bullet {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  
+  
