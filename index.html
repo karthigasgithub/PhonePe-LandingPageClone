@@ -7,152 +7,195 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
 
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-    crossorigin="anonymous"
-  />
+    crossorigin="anonymous"/>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-   
-   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-
+    referrerpolicy="no-referrer"/>    
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="shortcut icon" href="./images/titleimg.png" type="image/x-icon">
     <title>PhonePe</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./images/PhonePe_icon.svg" alt="" width="200" height="60" class="" />
-          </a>
+    <header id="header" class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container" style="height: 60px;" >
+          <div class="col-2" style="display: flex;  justify-content: space-evenly; margin-left: -75px; margin-right: 10px;">
+            <a class="navbar-brand" href="#">
+              <img src="./images/PhonePe_icon.svg" alt="logo" width="155" height="66" class="" />
+            </a>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-black " href="#">BUSSINESS SOLUTIONS</a>
-              </li>
-              <li class="nav-item">
+          <div class="col-8 navbar-collapse"  id="navbarSupportedContent" style="display: flex;  justify-content: space-evenly; width: 96%;">
+              <div class="nav-item">
+                <a class="nav-link text-black " href="#">BUSINESS SOLUTIONS</a>
+              </div>
+              <div class="nav-item">
                 <a class="nav-link text-black" href="#">PRESS</a>
-              </li>
+              </div>
              
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">CARRERS</a>
-                    </li>
-                <li class="nav-item">
+                <div class="nav-item">
+                    <a class="nav-link text-black" href="#">CAREERS</a>
+                </div>
+                <div class="nav-item">
                     <a class="nav-link text-black" href="#">ABOUT US</a>
-                    </li>
-                <li class="nav-item">
+                </div>
+                <div class="nav-item">
                     <a class="nav-link text-black" href="#">BLOG</a>
-                    </li>
-                <li class="nav-item">
+                </div>
+                <div class="nav-item">
                     <a class="nav-link text-black" href="#">CONTACT US</a>
-                    </li>
-                <li class="nav-item">
+                </div>
+                <div class="nav-item">
                     <a class="nav-link text-black" href="#">TRUST & SAFETY</a>
-                    </li>
-            </ul>
-            
+                </div>         
           </div>
         </div>
-      </nav>
+      </header>
 
 
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"  space-between="30"
-      slides-per-view="1" keyboard="true" loop="true">
-      <swiper-slide>
-        <h1 class="banner-text-new">
-          <div class="row " >
-            <div class="d-flex">
-              <h1 class="text-decoration-line-through fw-bold"  style="    color: rgb(15, 160, 170);">2% </h1><span class="mx-2 " style="font-size: 60px; margin-top: -20px; color: rgb(40, 40, 189);">FREE</span>
-            </div>
-           
-            <div class="col-md-6" >Accept payments for your online business at zero cost
-              <p class="banner-para px-5" style="color: rgb(15, 15, 88);">Signup for PhonePe gateway!</p>
-              <button class="btn  rounded-5 banner-btn2 p-2 px-5 btn-outline-none">Get Started</button>
-            </div>
-          </div></h1>
-        <img height="450px" width="100%" class="pb-5" src="images/hp-banner-pg.jpeg"></swiper-slide>
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
 
-      <swiper-slide> <h1 class="banner-text">
-        <div class="row " >
-          <div class="col-md-5  ">View statements and manage financial  data consents
-            <p class="banner-para px-5">Register on PhonePe Account Aggregator Now!!</p>
-            <button class="btn  rounded-5 banner-btn p-2 px-5 btn-outline-none">Know More</button>
+          <div class="swiper-slide">
+            <h1 class="" style="position: absolute;">
+              <div class="row m-4">
+                <div style="margin-left:70px;margin-top:80px;">
+                  <h1 style="color:#d49ce7;font-size: 2.4rem;font-weight:500px;margin-left:30px;">Download all your favourite apps</h1>
+                <p style="color: #ffffff;font-size: 2.3rem;font-weight: 400px;margin-top:10px;margin-left:35px;">from India's very own<br> Android app store</p>
+                <div style="margin-top:20px;margin-left:30px;">
+                  <button class="" style="cursor:pointer;border-radius: 30px;font-size:1rem;font-weight:bold;border-color:#ffffff;background-color:#ffffff;color:#000000;height:50px;width:300px;">Download Indus Appstore</button>
+                </div>
+                </div>
+              </div></h1>
+            <img height="450px" width="100%" class="pb-5" src="images/img1.jpeg">
           </div>
-        </div></h1>
-        <img height="450px" width="100%" class="pb-5" src="images/hp-banner-aa.png"></swiper-slide>
+
+            <div class="swiper-slide">
+              <h1 class="banner-text-new">
+                <div class="row " >
+                  <div class="d-flex">
+                    <h1 class="text-decoration-line-through fw-bold"  style="color: #c7bed8;">2% </h1>
+                    <span class="mx-2 " style="font-size: 60px; margin-top: -20px; color: #5f1f9c;">FREE
+                    </span>
+                  </div>
+                  <div class="col-md-6" style="color: #3e2a80;">Accept payments for your online business at zero cost
+                    <p class="banner-para px-5" style="color: #3e2a80;">Signup for PhonePe Gateway</p>
+                    <button class="btn  rounded-5 banner-btn2 p-2 px-5 btn-outline-none">Get Started</button>
+                  </div>
+                </div>
+              </h1>
+              <img height="450px" width="100%" class="pb-5" src="https://www.phonepe.com/webstatic/6444/static/bab93065eae063d167f5ea2699093877/70ff9/hp-banner-pg.jpg">
+            </div>
+
+
+                <div class="swiper-slide">
+                  <div  style="position: absolute;">
+                    <img style="object-fit: contain; opacity:1;margin-left:20px;margin-top:20px;height:60px;" src="images/img3.jpeg" alt="">
+                  <h1 class="banner-text">
+                    <div class="row m-4">         
+                      <div style="margin-left:80px;margin-top: 20px; width: 750px;">
+                      <h1 style="color: #017c07;font-size: 2.3rem;font-weight: bold;">One payment solutions <br> for all your business needs</h1>
+                      <h1 style="color: #017c07;font-size: 3.2rem;font-weight:bolder;">PhonePe Business App</h1>
+                      <div style="margin-top: -10px; ">
+                        <a href=""><button style="cursor:pointer;border-radius: 30px;border-color:#0073d8;background-color:#0073d8;color:#ffffff;height:40px;width: 200px;font-size: 1rem;font-weight: bold;">Register Now</button></a>
+                      </div>
+                    </div>
+                    </div></h1></div>
+                  <img height="450px" width="100%" class="pb-5" src="images/img2.jpeg">
+                </div>
+
+                <div class="swiper-slide">
+                  <div  style="position: absolute;">
+                    <img style="object-fit: contain; opacity:1;margin-left:20px;margin-top:20px;height:50px;" src="https://www.phonepe.com/webstatic/6513/static/1ff58b57dfcfbc88fcfde3e5224915cf/a0a1b/share-market-logo.webp" alt="">
+                  <h1 class="banner-text">
+                    <div class="row m-4">  
+                      <div style="margin-left:-40px;margin-top:20pSwiperx ;width: 750px;">
+                        <h1 style="color: #ffffff;font-weight: bolder;font-size: 3rem;font-weight:500px;margin-left:34px;">Invest in stocks easily</h1>
+                      <p style="color: #ffffff;font-size: 1.5rem;font-weight: 400px;margin-top:20px;margin-left:35px;">Download Share Market and open your<br> FREE* Demat Account today to invest</p>
+                      <div style="margin-top:10px;margin-left:30px;">
+                        <a href=""><button style="cursor:pointer;border-radius: 30px;border-color:#17c55f;background-color:#17c55f;color:#ffffff;height:50px;width:210px;font-size: 1rem;"><b>Open Account</b></button></a>
+                      </div>
+                      </div>
+                      <p style="color: #fff;font-size: .95rem;margin-left:-100px;margin-top: 65px;">T&C Apply</p>
+                    </div></h1> </div>
+                  <img height="450px" width="100%" class="pb-5" src="images/img4.jpeg">
+                </div>
      
-      
-      <swiper-slide>
-        <h1 class="banner-text">
-          <div class="row m-4" >
-            <div class="col-md-6 ">PhonePe <span style="color: rgba(189, 222, 231, 0.753);">Pulse</span> 
-              <h4  class="fw-bold" style="color: rgba(144, 194, 209, 0.822); ">Beat Of Progress</h4>
-              <p class="banner-para px-5"  style="color: rgba(148, 195, 209, 0.966); " >Find out how money moves in a country of 140 crore! Now updated with latest data for Q4 2023(oct-dec)</p>
-              <button class="btn  rounded-5 banner-btn p-2 px-5 btn-outline-light">Know More</button>
-            </div>
-          </div></h1>
-        <img height="450px" width="100%" class="pb-5" src="images/hp-banner4wt.png">
-      
 
-      </swiper-slide>
-      <swiper-slide>
-        <h1 class="banner-text"  style="color: rgb(26, 26, 126);">
-          <div class="row " >
-            <div class="col-md-5  ">Recharge, Pay bills & send money safely from home!
-              <p class="banner-para px-5" style="color: rgb(4, 4, 252);">Help your family and friends make safe Payments with PhonePe </p>
-              <button class="btn  rounded-5 banner-btn2 p-2 px-5 btn-outline-none" >Get the App</button>
+            <div class="swiper-slide">
+              <h1 class="banner-text" style="margin-left: 140px;">
+                <div class="row " >
+                  <div class="col-md-5  ">View statements & manage financial  data consents
+                    <p class="banner-para px-5">Register on PhonePe Account Aggregator Now!!</p>
+                    <button class="btn  rounded-5 banner-btn p-2 px-5 btn-outline-none">Know More</button>
+                  </div>
+                </div></h1>
+                <img height="450px" width="100%" class="pb-5" src="images/hp-banner-aa.png">
             </div>
-          </div></h1>
-        <img height="450px" width="100%" class="pb-5" src="images/hp-banner1.png"></swiper-slide>
-      </swiper-container>
 
-    <div class="container mt-5 mb-5">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card card-body">
-            <a href="/#"> <img class="card-img-top" src="images/card-img-1.svg" alt=""></a>
-           
-            <div class="d-flex card-head">
-              <a href="/#" class="text-decoration-none">
-              <h2 class="" style="color:rgb(23, 23, 87);">Insurance</h2></a>
-              <a href="/#" class="ms-auto text-decoration-none"><h1 style="color: rgb(126, 57, 216);" >→</h1></a>
-              
+            <div class="swiper-slide">
+              <h1 class="banner-text">
+                <div class="row m-4" >
+                  <div class="col-md-6 ">PhonePe <span style="color: rgba(189, 222, 231, 0.753);">Pulse</span> 
+                    <h4  class="fw-bold" style="color: #c2a6ff; ">Beat Of Progress</h4>
+                    <p class="banner-para px-5"  style="color: #c2a6ff; " >Find out how money moves in a country of 140 crore! Now updated with latest data for Q4 2023(oct-dec)</p>
+                    <button class="btn  rounded-5 banner-btn p-2 px-5 btn-outline-light">Explore Now</button>
+                  </div>
+                </div></h1>
+              <img height="405px" width="100%" class="" src="images/hp-banner4wt.png">
+            </div>  
+        
+
+        </div>
+        <!-- Add Pagination -->
+        <div>
+        <div class="swiper-pagination" style="display: flex;
+        justify-content: center ;margin-top: -35px; position:inherit;"></div>
+      </div>
+  </div>
+
+
+  
+    <div class="container mt-5 mb-5" style="margin-left: 40px;">
+      <div style="display: flex; margin-top: 60px;">
+
+        <div style="width: 530px; height: 270px;">
+          <div class="card cardfonts" style="height: 265px;border: 1px solid #979797; border-radius: 12px;  position: relative;">
+            <div> <img class="card-img-top" src="images/card-img-1.svg" alt=""></div>          
+            <div style="display: flex ; flex-direction: row; position: absolute; bottom: 0.3em; left: 1em;">
+              <div><h2 style="color:#361968;">Insurance</h2></div>
+              <div style="margin-left: 3.2em;"><h1 style="color: rgb(126, 57, 216);">→</h1></div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card card-body">
-            <a href="/#"> <img class="card-img-top" src="images/card-img-2.svg" alt=""></a>
-           
-            <div class="d-flex card-head">
-              <a href="/#" class="text-decoration-none">
-              <h2 class="" style="color:rgb(23, 23, 87);">Investments</h2></a>
-              <a href="/#" class="ms-auto text-decoration-none"><h1 style="color: rgb(126, 57, 216);" >→</h1></a>
-              
+
+        <div style="width:530px; height: 270px;">
+          <div class="card cardfonts" style="height: 265px;border: 1px solid #979797; border-radius: 12px; position: relative;">
+            <div><img class="card-img-top" src="images/card-img-2.svg" alt=""></div>
+            <div style="display: flex;flex-direction: row;position:absolute; left: 1em; bottom: 0.3em;">
+              <div><h2 style="color:#361968;">Investments</h2></div>
+              <div style="margin-left: 2em;"><h1 style="color: rgb(126, 57, 216);" >→</h1></div>   
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card card-body">
-            <a href="/#"> <img class="card-img-top" src="images/card-img-3.svg" alt=""></a>
-           
-            <div class="d-flex card-head">
-              <a href="/#" class="text-decoration-none">
-              <h2 class="" style="color:rgb(23, 23, 87);">Lending</h2></a>
-              <a href="/#" class="ms-auto text-decoration-none"><h1 style="color: rgb(126, 57, 216);" >→</h1></a>
-              
+
+        <div style="width:530px; height: 270px;">
+          <div class="card cardfonts" style="height: 265px;border: 1px solid #979797; border-radius: 12px; position: relative;">
+            <div><img class="card-img-top" src="images/card-img-3.svg" alt=""></div>
+            <div style="display: flex;flex-direction: row;position:absolute; left: 1em; bottom: 0.3em;">
+              <div><h2 class="" style="color:#361968;">Lending</h2></div>
+              <div><h1 style="margin-left: 3.2em;" >→</h1></div>      
             </div>
           </div>
         </div>
@@ -160,120 +203,427 @@
     </div>
 
 
-      
 
-      <div class="row mx-2">
-        <div class="col-md-6 p-5">
+    <br><br><br>
+
+      <div class="row mx-2" style="margin-right: 50px;">
+        <div class="col-md-6 p-10">
             <div class="container p-5">
-                <h1 class="heading1 ">Simple, fast & Secure</h1>
-                <h4 class="mt-5 mb-3">One app for all things money.</h4>
-                <p class="mb-4 text-info">Pay bills, recharge, send money, buy gold, invest and shop at your favourite stores.</p>
+                <h1 class="heading1"><b>Simple, Fast & Secure</b> </h1>
+                <h4 class="mt-5 mb-3 headingfont">One app for all things money.</h4>
+                <p class="mb-4 info">Pay bills, recharge, send money, buy gold, invest and shop at your favourite stores.</p>
                 <hr>
-                <h4 class="mb-3 mt-3">Pay whenever you like, wherever you like.</h4>
-                <p class="mb-4 text-info">Choose from options like UPI, the PhonePe wallet or your Debit and Credit Card.</p>
+                <h4 class="mb-3 mt-3 headingfont">Pay whenever you like, wherever you like.</h4>
+                <p class="mb-4 info">Choose from options like UPI, the PhonePe wallet or your Debit and Credit Card.</p>
                 <hr>
-                <h4 class="mb-3 mt-3">Find all your favourite apps on PhonePe Switch.</h4>
-                <p class="mb-4 text-info">Book flights, order food or buy groceries. Use all your favourite apps without downloading them.</p>
+                <h4 class="mb-3 mt-3 headingfont">Find all your favourite apps on PhonePe Switch.</h4>
+                <p class="mb-4 info">Book flights, order food or buy groceries. Use all your favourite apps without downloading them.</p>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="width: 50%; margin-left:-70px; margin-top: -90px; transform: scale(105%);">
             <div class="container p-5">
-                <video src="videos/phonepe_demo.mp4" autoplay muted loop ></video>
-            </div>
-           
+                <video src="videos/phonepe_video.mp4" autoplay muted loop ></video>
+            </div>         
         </div>
       </div>
 
+
       <div class="container d-flex justify-content-center align-items-center">
-        
-            <img class="nt_insurance" src="images/nt_insurance.png" alt="">
-        
+            <img style="width: 50%;" src="images/nt_insurance.png" alt="">      
        </div>
        <div class="d-flex justify-content-center align-items-center">
         <div>
             <img src="./images/PhonePe_icon.svg" alt="" width="200" height="60" class="" />
-        </div>
-        
-        
+        </div>    
       </div>
 
+      <br><br><br>
 
-      <div class="container mt-3">
-        <p class="para ">Payments on PhonePe are safe, reliable and fast. One in three Indians are now using the PhonePe app to send money, recharge, pay bills and do so much more, in just a few simple clicks. PhonePe has also introduced several Insurance products and Investment options that offer every Indian an equal opportunity to unlock the flow of money, and get access to financial services.</p>
-        <p class="hashtag">#KarteJaBadhteJa</p>
+
+      <div id="carou-container">
+        <div id="carous">
+            <div class="carou" id="carou-1">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-1.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-2">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-2.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-3">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-3.jpeg" alt=""></div>
+                    <div class="play-btn" style="position: absolute; bottom: 20%; left: 40%;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-4">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-4.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-5">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-5.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-    <div class="mx-5 rounded-5" style="background-color: rgba(178, 119, 233, 0.753);">
+      <a href="" class="watch-btn-container" style="text-align:center;text-decoration:none">
+        <span class="watch-btn" style="color:#533093 ; border: 1px solid #533093; border-radius:18px; height:36px; line-height:32px ;display:block; margin:auto;width:275px;margin-bottom:25px">
+            <span style="font-size:1rem ;vertical-align:middle">Watch all videos</span>
+        </span>
+    </a>
+       <div class="container mt-3" style="align-items: center;
+       display: flex;
+       justify-content: center;
+       width: 100%;">
+        <p class="para">Payments on PhonePe are safe, reliable and fast. One in three Indians are now using the PhonePe app to send money, recharge, pay bills and do so much more, in just a few simple clicks. PhonePe has also introduced several Insurance products and Investment &nbsp; options that offer every Indian an equal opportunity to unlock the flow of money, and get access to financial services.</p>
+      </div>
+        <p class="hashtag">#KarteJaBadhteJa</p><br><br><br><br><br>
+
+      
+
+    <div class="mx-2 rounded-5" style="position: relative; background-color:#967edd; width:99%; height: 330px;" style="overflow-y: hidden;">
       <div class="d-flex">
-        <img src="images/secure.png" class="img-secure" alt="">
-        <div class="trust-text">
-          <h1 class=""> Your money stays safe</h1>
-          <p class="fw-bold fs-5 px-5 mt-4" style="margin-left: -40px; margin-right: 120px;">PhonePe protects your money with the best-in-class security systems that help minimize frauds.</p>
-          <div class="d-flex ">
-            <img src="images/certification-1.png" width="100px" height="50px" alt="">
-            <img src="images/certification-2.png" class="mx-5" width="100px" height="50px" alt="">
+          <div class="trust-text">
+          <h1 style="margin-left: 50px;"><b>Your money stays safe.</b> </h1>
+          <p class="fw-bold fs-5 px-5 mt-4" style="margin-right: 32px;">PhonePe protects your money with the best-in-class <br> security systems that help minimize frauds.</p>
+          <div class="d-flex">
+            <img src="data:image/png;base64,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" 
+             style="width: 100px;margin-right: 32px; margin-top: 80px;" class="mx-5" alt="">
+            <img src="images/certification-1.png"  style="width: 100px; height: 31px;margin-top: 80px;" alt="">
           </div>
-        </div>
-        
-      </div>
-      
-      
-      <img src="images/trust-banner.png" class="rounded-5 overflow-hidden "  width="100%" alt="">
+        </div>   
+      </div>     
+      <div><img src="images/trust-banner.png" class="rounded-5" style="transform: translate(100px,5px);position: absolute; width:99%; height:330px ;margin-left:-90px; margin-top:-5px; overflow-y: hidden;"></div>
+      <img src="images/secure.png" class="img-secure" style="height:200px; width:200px; margin-top:70px; margin-left: 70px;" alt="">
 
     </div>
-     
-    <div class="container mt-3 d-flex align-items-center justify-content-center">
-        <h4 class="heading2 mx-5">
-            At 3.8 Crore <br>
-stores, apps, websites & more
-        </h4>
-        
+
+    <div style=" background-image: linear-gradient(#e4e0fb, #fffeff);">
+      <br><br><br>
+    <div class="heading2">
+        <div>At 3.8+ Crore</div><div>stores, apps, websites & more</div>    
     </div>
 
    
 <div class="d-flex justify-content-center align-items-center mt-4">
-    <button class="btn btn-primary rounded-5 px-5 py-3 fw-bold">Partner With Us  </button>
+  <button id="btn" class="btn rounded-5 px-3 py-3" style=" background-color: #07c3de;
+  color: #fff; 
+  width: 250px;  
+  height: 60px;">Partner with us <img id="btn-img" style="margin-left: 1em;" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNMS4wNTQgOC41SDMxIi8+PHBhdGggc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTI0IDFsOCA4LTggNyIvPjwvZz48L3N2Zz4=" alt="arrow"> 
+  </button>
 </div>
+
+
 
 <img src="images/partner-section-desk.png" class="partner mt-4" alt="">
+</div>
 
-<div class="grey-section mt-4">
-<div class="">
-    <section class="" id="press">
-        <h2 class="text-center">PhonePe is the best thing that ever had happenned to me ever. Its the best !!!</h2>
-        <img class="roundedimg" src="images/barackobama.jpeg">
-        <p class="text-center">- Barack Obama</p>
-    
-        <div class="d-flex justify-content-center align-items-center">
-        <img class="press-img" src="images/ndtv.png" alt="ndtv-logo">
-        <img class="press-img" src="images/forbes.png" alt="forbes-logo">
-        <img class="press-img" src="images/newyorktimes.png" alt="nyt-logo">
-        <img class="press-img" src="images/yourstory.png" alt="yourstory-logo">
+<br><br><br>
+
+
+<div class="container">
+<div class="row">
+  <div class="col-md-7">
+      <div class="img-container">
+      <img class="img-fluid" style="width: 100%; height: 580px; margin-left: -75px;" src="https://www.phonepe.com/webstatic/6508/static/7f5a690b04f23ab91ccc4061249a2745/497c6/basket-desktop.png" alt="base image"> 
+      <img class="img-fluid overlay-image partner" src="https://www.phonepe.com/webstatic/6508/static/cfb480f27dda7ed0b0d48ec775dd2b1f/fca2e/sales-anim.png" alt="overlay image">
+      </div>
+  </div>  
+      <div class="container p-auto col-md-5">
+
+              <div class="hover-div" style="cursor: pointer;">
+             <h1 class="heading1"><b>For Business</b> </h1><br>
+              <p style="color: #5e5c5c;">Find the digital payment solution that fits your business needs</p>
+              <h5 class="mt-5">I want to:</h5>
+              <div style="width: 600px;display: flex; flex-direction: row;">
+              <div><h4 class="mt-3  busfonts">Be on PhonePe Switch </h4></div>
+                <div class="hover-img-div"><img style="margin-left: 320px; transform: translateY(10px);" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNyI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjczOUI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTEgMSA4IDcuNUwxIDE2Ii8+PC9zdmc+" alt="">
+             </div></div>
+              <p class="mb-3 innerfonts">Get new users for your app</p>
+
+              <hr style="width: 35em;">
+            </div>
+
+            <div class="hover-div" style="cursor: pointer;">
+              <div style="width: 600px;display: flex; flex-direction: row;">
+              <div><h4 class="mt-4 busfonts">Accept payments at stores </h4></div>
+               <div class="hover-img-div"><img style="margin-left: 280px; transform: translateY(20px);" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNyI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjczOUI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTEgMSA4IDcuNUwxIDE2Ii8+PC9zdmc+" alt="">
+              </div> </div>
+                <p class="mb-3 innerfonts">Help your business go cashless</p>
+
+              <hr style="width: 35em;">
+            </div>
+
+
+            <div class="hover-div" style="cursor: pointer;">
+              <div style="width: 600px;display: flex; flex-direction: row;">
+              <div><h4 class="mt-4 busfonts">Integrate PhonePe Payment Gateway </h4></div>
+                <div class="hover-img-div"><img style="margin-left: 185px; transform: translateY(20px);" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNyI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjczOUI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTEgMSA4IDcuNUwxIDE2Ii8+PC9zdmc+" alt="">
+                </div></div>
+              <p class="mb-3 innerfonts">Process online payments seamlessly</p>
+              <hr style="width: 35em;">
+            </div>
+
+            <div class="hover-div" style="cursor: pointer;">
+              <div style="width: 600px;display: flex; flex-direction: row;">
+              <div><h4 class="mt-4 busfonts">Advertise on PhonePe</h4></div>
+               <div class="hover-img-div"><img style="margin-left: 315px;transform: translateY(20px);" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNyI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjczOUI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTEgMSA4IDcuNUwxIDE2Ii8+PC9zdmc+" alt="">
+               </div></div>
+               <p class="mb-3 innerfonts">Advertise & let customers know about you</p>
+               <hr style="width: 0em;">
+            </div>
+              
+      </div>
+</div>
+</div>
+
+<br><br><br><br>
+
+
+<div style="position: relative;">
+  <!-- Content -->
+  <div class="row" style="position: absolute; top: 40%; left: 60%; transform: translate(-50%, -50%); width: 100%;">
+    <div class="col-4">
+      <h4 class="explorefont1">Trusted by over</h4>
+      <h1 class="explorefont2">52+ Crore</h1>
+      <h4 class="explorefont1">Registered Users</h4>
     </div>
-      </section>
+    <div class="col-4" style="margin-left:-10px;">
+      <h4 class="explorefont1">Accepted all over</h4>
+      <h1 class="explorefont2">India</h1>
+    </div>
+    <div class="col-4" style="margin-left: -50px;">
+      <h4 class="explorefont1">Accepted at</h4>
+      <h1 class="explorefont2">3.8+ Crore</h1>
+      <h4 class="explorefont1">Stores</h4>
+    </div>
+    <div style="display: flex; padding-top: 2em;"><div><h4 style="color: #d4cbff;"><b>Get the latest data trends and insights on PhonePe Pulse!</b></h4></div>
+    <div><button class="btn rounded-5" style="background-color: transparent;
+      border: 2px solid #4cdeff;
+      color: #fff;
+      font-size: 1.125rem;
+      height: 40px;
+      line-height: 10px;
+      text-align: center;
+      width: 170px; margin-left: 130px;">Explore Now</button></div>
+   </div>
+  </div>
+
+  <!-- Image -->
+  <img style="width: 1275px ;height: 444px; display: block;" src="https://www.phonepe.com/webstatic/6508/static/stats-desktop-d03f14dfb53bebd5b23b63dd8e464adb.png" alt="">
 </div>
+
+
+<br>
+<footer >
+  <div style="display:flex;flex-direction: row;" class="footer">
+    <div class="icon">
+      <img style="height: 59.4px; width:140px;" src="images/PhonePe_icon.svg" alt="Icon">
+    </div>
+  <ul class="content">
+
+    <div class="column" style="display: block; width: 100px; flex: auto ; margin-left:auto;">
+      <h3 class="footer-heading"><a href="#">Business Solutions</a></h3>
+      <ul>
+        <li><a class="sub-heading" href="#">Payment Gateway</a></li>
+        <li><a class="sub-heading" href="#">Guardian by PhonePe</a></li>
+        <li><a class="sub-heading" href="#">Express Checkout</a></li>
+        <li><a class="sub-heading" href="#">PhonePe Switch</a></li>
+        <li><a class="sub-heading" href="#">Offline Merchant</a></li>
+        <li><a class="sub-heading" href="#">Advertise on PhonePe</a></li>
+        <li><a class="sub-heading" href="#">SmartSpeaker</a></li>
+        <li><a class="sub-heading" href="#">Phonepe Lending</a></li>
+      </ul>
+    </div>
+    <div class="column" style="width: 206px;">
+      <h3 class="footer-heading"><a href="#">Insurance</a></h3>
+      <ul>
+        <li><a class="sub-heading" href="#">Motor Insurance</a></li>
+        <li><a class="sub-heading" href="#">Bike Insurance</a></li>
+        <li><a class="sub-heading" href="#">Car Insurance</a></li>
+        <li><a class="sub-heading" href="#">Health Insurance</a></li>
+        <li><a class="sub-heading" href="#">Arogya Sanjeevani Policy</a></li>
+        <li><a class="sub-heading" href="#">Life Insurance</a></li>
+        <li><a class="sub-heading" href="#">Term Life Insurance</a></li>
+        <li><a class="sub-heading" href="#">Personal Accident Insurance</a></li>
+        <li><a class="sub-heading" href="#">Travel Insurance</a></li>
+        <li><a class="sub-heading" href="#">Domestic Travel Insurance</a></li>
+        <li><a class="sub-heading" href="#">International Travel Insurance</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3 class="footer-heading"><a href="#">Investments</a></h3>
+      <ul>
+        <li><a class="sub-heading" href="#">24K Gold</a></li>
+        <li><a class="sub-heading" href="#">Liquid Funds</a></li>
+        <li><a class="sub-heading" href="#">Tax Saving Funds</a></li>
+        <li><a class="sub-heading" href="#">Equity Funds</a></li>
+        <li><a class="sub-heading" href="#">Debt Funds</a></li>
+        <li><a class="sub-heading" href="#">Hybrid Funds</a></li>
+      </ul>
+    </div>
+    <div class="column" style="width: 148px;">
+      <h3 class="footer-heading"><a href="#">General</a></h3>
+      <ul>
+        <li><a class="sub-heading" href="#">About Us</a></li>
+        <li><a class="sub-heading" href="#">Careers</a></li>
+        <li><a class="sub-heading" href="#">Contact Us</a></li>
+        <li><a class="sub-heading" href="#">Press</a></li>
+        <li><a class="sub-heading" href="#">Ethics</a></li>
+        <li><a class="sub-heading" href="#">Report Vulnerability</a></li>
+        <li><a class="sub-heading" href="#">Merchant Partners</a></li>
+        <li><a class="sub-heading" href="#">Blog</a></li>
+        <li><a class="sub-heading" href="#">Tech Blog</a></li>
+        <li><a class="sub-heading" href="#">PhonePe Pulse</a></li>
+      </ul>
+    </div>
+    <div class="column" style="margin-right: 95px; width: 250px;">
+      <h3 class="footer-heading"><a href="#">Legal</a></h3>
+      <ul>
+        <li><a class="sub-heading" href="#">Terms & Conditions</a></li>
+        <li><a class="sub-heading" href="#">Privacy Policy</a></li>
+        <li><a class="sub-heading" href="#">Grievance Policy</a></li>
+        <li><a class="sub-heading" href="#">How to Pay</a></li>
+        <li><a class="sub-heading" href="#">E-Waste Policy</a></li>
+        <li><a class="sub-heading" href="#">Trust & Safety</a></li>
+        <li><a class="sub-heading" href="#">Global Anti-Corruption</a></li>
+        <li><a class="sub-heading" href="#">Policy</a></li>
+      </ul>
+    </div>
+    <li class="column" style="margin-left: -50px;">
+      <h3 class="footer-heading"><a href="#">Certification</a></h3>
+      <ul>
+        <li><a class="sub-heading" href="#"><img style="height: 65px;width: 113px;" src="https://www.phonepe.com/static/sisa-f4b48e5a5d0f5862515676359b94c75a.png" alt=""></a><h3 style="margin-top: 10px;" class="footer-heading">See All Apps</h3><button style="border-radius: 10px;border-color:#000;font-size: small;background-color:white;width: 130px;height: 30px;">DOWNLOAD NOW</button></li>
+      </ul>
+    </li>
+  </ul>
 </div>
+<div style="margin-top:24px;" class="footer-social">
+  <div style="display:flex; justify-content:end;margin-right:92px;" class="social-media">
+    <a href=""><div style="padding:0 10px;"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxwYXRoIGlkPSJhIiBkPSJNLjM3MS4wNmgzMy4zOTV2MzMuMDU3SC4zN3oiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48cGF0aCBkPSJNOC43MTcgMTAuOTI3YzEuNDIzIDAgMi42MDgtMS4xNzUgMi41OTEtMi41NjgtLjAxNi0xLjM5Ni0xLjIyOC0yLjU2NS0yLjYzNS0yLjU0LTEuMzg3LjAyMy0yLjUzNyAxLjE3NS0yLjU0MyAyLjU0OC0uMDA2IDEuNDIgMS4xNDcgMi41NiAyLjU4NyAyLjU2ek02LjUyMyAyNi45N2g0LjM0NFYxMi45MDJINi41MjNWMjYuOTd6bTExLjY0LjAwMnYtLjgyM2MwLTIuMDgtLjAxLTQuMTYuMDA5LTYuMjQxYTcuODA1IDcuODA1IDAgMDEuMTcyLTEuNmMuMTk2LS44ODguNjczLTEuNTY3IDEuNjMtMS44MSAxLjgwNi0uNDU2IDMuMDQ4LjQyMyAzLjA5NCAyLjI5NS4wNiAyLjQ0Ni4wMzYgNC44OTUuMDQ4IDcuMzQydi44MDhoNC40MjVjMC0zLjA2OC4wMDgtNi4wNzQtLjAwOC05LjA4LS4wMDMtLjQ4Ni0uMDg2LS45NzYtLjE3OC0xLjQ1NS0uNDctMi40NTQtMS45NzItMy43MjktNC40ODgtMy44ODYtMS45Ni0uMTIzLTMuNTkuNDU2LTQuODkxIDIuMjY4di0xLjg4N2gtNC4yMnYxNC4wN2g0LjQwOHpNMTUuNzg3LjA2aDIuNTI2Yy4xNC4wMzguMjc2LjA5OC40MTcuMTEyIDYuNjk2LjY1IDEyLjM3NiA1LjIzOCAxNC4yODggMTEuNjA1LjM0OCAxLjE1OC41MDQgMi4zNzMuNzQ5IDMuNTYxdjIuNDk4Yy0uMDU2LjM1OC0uMTE1LjcxNS0uMTY3IDEuMDczLTEuMzAzIDkuMDIxLTkuODIyIDE1LjM0NS0xOC45MTEgMTQuMDM3QzUuODM5IDMxLjY3My0uMzY4IDIzLjg3Mi40NDIgMTUuMDQzIDEuMDU4IDguMzM3IDUuNzA4IDIuNjk1IDEyLjI1Mi43ODZjMS4xNS0uMzM1IDIuMzU1LS40ODggMy41MzQtLjcyNnoiIGZpbGw9IiMwMDAiIG1hc2s9InVybCgjYikiLz48L2c+PC9zdmc+" alt=""></div></a>
+    <a href=""><div style="padding:0 10px;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgZmlsbD0ibm9uZSI+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTcuMDEyIDBDMjYuMzkyLjAwNSAzNC4wMDIgNy42MjIgMzQgMTcuMDAzYzAgOS4zOS03LjY0IDE3LjAxNi0xNy4wMjggMTYuOTk3QzcuNTkgMzMuOTgxLS4wMDcgMjYuMzYzIDAgMTYuOTguMDA3IDcuNjA0IDcuNjMtLjAwNSAxNy4wMTIgMFptOS4xMjMgOS44MTFjLS43LjI1Mi0xLjM5NC40OTgtMi4wODUuNzUyLS4yMzMuMDg1LS4zOS4wMjgtLjU4NS0uMTQxLTEuMTc1LTEuMDMtMi41My0xLjMtMy45ODUtLjc0OC0xLjQ0NC41NDctMi4yOCAxLjYzNi0yLjQ4IDMuMTcyLS4wNTcuNDQtLjAxLjg5Mi0uMDEgMS4zNTItMy4yMjEtLjIzMi01Ljg2Ni0xLjU5NC03Ljk5Ny00LjA4Ni0uOTQgMi4wNTYtLjU0NCAzLjc2MSAxLjEzNiA1LjE5NmwtLjA2LjA3Yy0uNTMzLS4xNS0xLjA2NC0uMzA0LTEuNjEtLjQ2LjAxMS44OS4yODggMS42ODcuODQgMi4zOS41NTMuNzA0IDEuMjgxIDEuMTQ2IDIuMTQ0IDEuMzg0LS4wMDUuMDMyLS4wMS4wNjQtLjAxNy4wOTZIOS44MTNjLjY1IDEuNjY1IDEuODQgMi41NDQgMy41OTEgMi43MjUtMS4yNjEgMS4xMDgtMi45IDEuNTgtNS42MTcgMS42MzIuMTA5LjA3NC4xODIuMTM1LjI2NC4xODIgMy4yMjIgMS44MjIgNi42MDcgMi4xMTcgOS45ODQuNjYzIDQuMzYtMS44NzYgNi40NTYtNS40MTQgNi43MTgtMTAuMDg1LjAyNi0uNDU2LjExMi0uNzY2LjQ5MS0xLjA0Ny41NTUtLjQxIDEuMDAxLS45NDEgMS4zOTItMS41MzNsLTEuOTk3LjUzOS0uMDM2LS4wOTRjLjcxOC0uNSAxLjI1MS0xLjE0NSAxLjUzLTEuOTU3bC4wMDItLjAwMloiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjYuMTM0IDkuODExYy0uMjgxLjgxMy0uODEzIDEuNDU3LTEuNTMgMS45NThsLjAzNS4wOTMgMS45OTctLjUzOGMtLjM5LjU5LS44MzcgMS4xMjItMS4zOTIgMS41MzMtLjM4LjI4LS40NjUuNTktLjQ5IDEuMDQ3LS4yNjMgNC42Ny0yLjM2IDguMjA5LTYuNzIgMTAuMDg1LTMuMzc0IDEuNDU0LTYuNzYgMS4xNTktOS45ODMtLjY2My0uMDgyLS4wNDctLjE1Ny0uMTA3LS4yNjQtLjE4MyAyLjcxNi0uMDUyIDQuMzU2LS41MjQgNS42MTgtMS42MzItMS43NTItLjE4LTIuOTQyLTEuMDYtMy41OTItMi43MjVoMS42MTNjLjAwNS0uMDMyLjAxLS4wNjQuMDE3LS4wOTYtLjg2My0uMjM4LTEuNTkxLS42OC0yLjE0NS0xLjM4NGEzLjg0NiAzLjg0NiAwIDAgMS0uODM5LTIuMzg5bDEuNjEuNDYuMDYtLjA3Yy0xLjY4LTEuNDM1LTIuMDc1LTMuMTQtMS4xMzYtNS4xOTYgMi4xMyAyLjQ5MyA0Ljc3NiAzLjg1NSA3Ljk5OCA0LjA4NSAwLS40Ni0uMDUtLjkxMi4wMDktMS4zNS4yMDItMS41MzYgMS4wMzYtMi42MjUgMi40OC0zLjE3MyAxLjQ1Ny0uNTUyIDIuODEtLjI4IDMuOTg1Ljc0OC4xOTQuMTcuMzUyLjIyNy41ODUuMTQuNjkxLS4yNTQgMS4zODYtLjUgMi4wODUtLjc1aC0uMDAxWiIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMzR2MzRIMHoiLz48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4=" alt=""></div></a>
+    <a href=""><div style="padding:0 10px;"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxLjcgMTcuMDQybC40LTMuNTkzaC0zLjQ1NWMwLS44MjgtLjAzMy0xLjYwNC4wMTMtMi4zNzYuMDI4LS40NzEuMzc3LS43MS44OTgtLjcyLjQ4LS4wMTEuOTYtLjAwNCAxLjQ0LS4wMDRoMS4wMjFWNi44Yy0xLjU2NS4wNTEtMy4xMTMuMDI2LTQuNjQyLjE3Ny0xLjE1OS4xMTUtMi4wNy43NTItMi42NjkgMS43MS0uNDgxLjc3LS42NTcgMS42MTItLjY2NiAyLjQ5LS4wMDcuNzQtLjAwMSAxLjQ4LS4wMDEgMi4yNjhoLTIuMTR2My42MDdoMi4xNDRWMjcuMmg0LjU3OFYxNy4wNDJIMjEuN3pNMTYuOTgyIDBDMjYuMzQ3LS4wMzIgMzMuOTQyIDcuNTQgMzQgMTYuOTY1Yy4wNTYgOS4zNjgtNy41NjUgMTcuMDEzLTE2Ljk4NCAxNy4wMzVDNy42MjMgMzQuMDIyIDAgMjYuNDA2IDAgMTcgMCA3LjYwOCA3LjU3LjAzMiAxNi45ODIgMHoiIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt=""></div></a>
+    <a href=""><div style="padding:0 10px;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgZmlsbD0ibm9uZSI+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMCAxNi45NjlDLjAxMiA3LjU5MyA3LjY0LS4wMTEgMTcuMDIyIDAgMjYuNDE1LjAxIDM0LjAyNCA3LjY1IDM0IDE3LjA0NiAzMy45NzYgMjYuNDIgMjYuMzM1IDM0LjAyNiAxNi45NjIgMzQgNy41OCAzMy45NzUtLjAxMiAyNi4zNTIgMCAxNi45NjlabTE2LjU1NC03LjQ4NC0uMDA0LjA4Yy0uMTIzIDAtLjI0NC0uMDA1LS4zNjYgMC0yLjMyLjExLTQuNjQxLjE4Ni02Ljk1Ni4zNDUtMS4zMi4wOS0yLjIzMy45MjYtMi40NTEgMi4yMjgtLjE5NiAxLjE2Mi0uMjk4IDIuMzQ2LS4zNjIgMy41MjVhMjcuNzIgMjcuNzIgMCAwIDAgLjI5NCA1Ljk1NGMuMjMxIDEuNDE3Ljk5NSAyLjIyNyAyLjQxMiAyLjQzNyAxLjA0OC4xNTUgMi4xMTIuMjIyIDMuMTcuMjY5IDQuMDA1LjE3NyA4LjAwOC4xNzIgMTIuMDA1LS4xNjMgMS45MS0uMTYgMi43NzYtLjk1NiAzLjA0My0yLjgzMy4yNy0xLjg5OS4zNTQtMy44MTMuMjQyLTUuNzI3LS4wNy0xLjE4OS0uMTc2LTIuMzgzLS4zOC0zLjU1NS0uMTk3LTEuMTI3LS45NTgtMS44MTQtMi4wNzgtMi4wNjhhNS44MjYgNS44MjYgMCAwIDAtMS4wMTYtLjE0N2MtMi41MTgtLjEyMi01LjAzNy0uMjM0LTcuNTU2LS4zNDhsLjAwMy4wMDNaIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE2LjU1NCA5LjQ4NWM0LjE0OS0uMDcgNy4yOTQuMTUzIDguNTcyLjQ5NC4zNzkuMTAxIDEuMDgyLjI5OCAxLjU4LjkyLjI0OC4zMTIuNDE5LjY5NC40OTggMS4xNDcuMjA1IDEuMTcyLjMxMyAyLjM2Ni4zOCAzLjU1Ni4xMTEgMS45MTMuMDI3IDMuODI3LS4yNDEgNS43MjctLjI2NiAxLjg3Ni0xLjEzMyAyLjY3My0zLjA0MyAyLjgzMy0zLjk5Ny4zMzUtOCAuMzM5LTEyLjAwNC4xNjItMS4wNi0uMDQ3LTIuMTI0LS4xMTMtMy4xNy0uMjY5LTEuNDItLjIxMS0yLjE4My0xLjAyLTIuNDEzLTIuNDM2LS4zMjItMS45NzMtLjQwMi0zLjk2My0uMjk0LTUuOTU1LjA2NC0xLjE3OC4xNjYtMi4zNjIuMzYyLTMuNTI1LjExLS42NTguMzk3LTEuMTk3LjgyNi0xLjU4LjU2NC0uNTA1IDEuMjQyLS42IDEuNjI1LS42NDcgMi41MzgtLjMxMiA3LjA3OS0uNDIyIDcuMzI1LS40MjdoLS4wMDNabS0xLjY1MiA0LjM0djYuMzUyTDIwLjQxNiAxN2wtNS41MTQtMy4xNzV2LS4wMDJaIi8+PHBhdGggZmlsbD0iIzAwMCIgZD0ibTE0LjkwMiAxMy44MjUgNS41MTQgMy4xNzRjLTEuODU3IDEuMDY5LTMuNjY1IDIuMTEyLTUuNTE0IDMuMTc1di02LjM1WiIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMzR2MzRIMHoiLz48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4=" alt=""></div></a>
+  </div>
+</div>
+<div>
+  <p style="color: #333;font-size: 1rem;font-weight: 300;line-height: 2.43;text-align: center;word-spacing: 1px;">
+    © 2024, All rights reserved
+  </p>
+</div>
+</footer>
 
 
 
 
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
     <script>
+      //header scrolling
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        var header = document.getElementById("header");
+
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      }
+
+      //JS for header
+      const button = document.getElementById('btn');
+      const image = button.querySelector('img');
+      button.addEventListener('mouseenter', function() {
+          button.style.backgroundColor = '#00ffee'; 
+          image.style.position = 'relative';
+          image.style.left = '12px';
+      });
+
+      button.addEventListener('mouseleave', function() {
+          button.style.backgroundColor = '#07c3de';
+          image.style.left = '0';
+      });
+
+      //JS for slider
+      var swiper = new Swiper('.mySwiper', {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              autoplay: {
+                  delay: 3000,
+              },
+              keyboard: true,
+              pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+              },
+              
+          });
+
+      //JS for animations
       ScrollReveal().reveal('.partner',{
         delay:500,
         origin:'left',
-        distance:'100px',
-        opacity:'0',
+        distance:'1300px',
+        opacity:'50',
+        duration:1500,
       });
-      </script>
+
+
+      //JS for video carousel
+      let carous=document.getElementById("carous").querySelectorAll(".carou");
+      carous.forEach(carou=>{
+        carou.addEventListener("mouseover",(event)=>{
+            let target=event.target;
+            if(target.tagName="IMG"){
+                target=target.parentNode.parentNode.parentNode;
+            }
+            let id=target.id;
+            id=id[6];
+            console.log(id);
+            id=Number(id);
+            target.style.transform="scale(95%)";
+            target.style.zIndex="5";
+            target.style.filter="brightness(1)";
+            target.querySelector(".image-container").querySelector(".play-btn").style.visibility="visible";
+            target.querySelector(".image-container").querySelector(".image-btn").style.transform="scale(105%)";
+            for(let i=id-1,value=87,zIndex=4;i>=1;i--,value-=8,zIndex--){
+                let temp=document.getElementById("carou-"+i);
+                temp.style.transform="scale("+value+"%)";
+                temp.style.zIndex=zIndex;
+                temp.style.filter="brightness(0.6)";
+                temp.querySelector(".image-container").querySelector(".play-btn").style.visibility="hidden";
+            }
+            for(let i=id+1,value=87,zIndex=4;i<=5;i++,value-=8,zIndex--){
+                let temp=document.getElementById("carou-"+i);
+                temp.style.transform="scale("+value+"%)";
+                temp.style.zIndex=zIndex;
+                temp.style.filter="brightness(0.6)";
+                temp.querySelector(".image-container").querySelector(".play-btn").style.visibility="hidden";
+            }
+        });
+      });
+</script>
     
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </body>
 </html>

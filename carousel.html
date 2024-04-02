@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        body{
+            background-color:white;
+            padding-top: 5em;
+            padding-bottom: 500em;
+        }
+        #carou-container{
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+        }
+
+        #carous{
+            display: flex;
+            flex-direction: row;
+            background-color: transparent;
+            position: relative;
+            width: 100%;
+        }
+
+        #carous > .carou{
+            border-radius: 30px;
+            background-color: transparent;
+            position: absolute;
+            transition-duration: 0.3s;
+            transition-property: transform;
+
+        }
+
+        #carous > .carou > img{
+            object-fit:cover;
+            background-color: transparent;
+        }
+
+        #carou-1{
+            z-index: 1;
+            left: 3%;
+            transform: scale(80%);
+            filter: brightness(0.6);
+        }
+        #carou-2{
+            z-index: 2;
+            left: 18%;
+            transform: scale(87%);
+            filter: brightness(0.6);
+        }
+        #carou-3{
+            z-index: 3;
+            left: 34%;
+            transform: scale(95%);
+        }
+        #carou-4{
+            z-index: 2;
+            left:50%;
+            transform: scale(87%);
+            filter: brightness(0.6);
+        }
+        #carou-5{
+            z-index: 1;
+            left: 65%;
+            transform: scale(80%);
+            filter: brightness(0.6);
+        }
+        .play-btn{
+            position: absolute; bottom: 20%; left: 40%;
+        }
+        .image-btn{
+            overflow: hidden;
+        }
+        .image-btn{
+            border-radius: 50px;
+        }
+        .image-container .image-btn img{
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover .image-btn img{
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="carou-container" >
+        <div id="carous">
+            <div class="carou" id="carou-1">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-1.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-2">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-2.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-3">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-3.jpeg" alt=""></div>
+                    <div class="play-btn" style="position: absolute; bottom: 20%; left: 40%;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-4">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-4.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carou" id="carou-5">
+                <div class="image-container" style="position: relative;">
+                    <div class="image-btn"><img src="images/coro-5.jpeg" alt=""></div>
+                    <div class="play-btn" style="visibility: hidden;"><img height="80px" src="images/play.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+      let carous=document.getElementById("carous").querySelectorAll(".carou");
+      carous.forEach(carou=>{
+        carou.addEventListener("mouseover",(event)=>{
+            let target=event.target;
+            if(target.tagName="IMG"){
+                target=target.parentNode.parentNode.parentNode;
+            }
+            let id=target.id;
+            id=id[6];
+            console.log(id);
+            id=Number(id);
+            target.style.transform="scale(95%)";
+            target.style.zIndex="5";
+            target.style.filter="brightness(1)";
+            target.querySelector(".image-container").querySelector(".play-btn").style.visibility="visible";
+            target.querySelector(".image-container").querySelector(".image-btn").style.transform="scale(105%)";
+            for(let i=id-1,value=90,zIndex=4;i>=1;i--,value-=10,zIndex--){
+                let temp=document.getElementById("carou-"+i);
+                temp.style.transform="scale("+value+"%)";
+                temp.style.zIndex=zIndex;
+                temp.style.filter="brightness(0.6)";
+                temp.querySelector(".image-container").querySelector(".play-btn").style.visibility="hidden";
+            }
+            for(let i=id+1,value=90,zIndex=4;i<=5;i++,value-=10,zIndex--){
+                let temp=document.getElementById("carou-"+i);
+                temp.style.transform="scale("+value+"%)";
+                temp.style.zIndex=zIndex;
+                temp.style.filter="brightness(0.6)";
+                temp.querySelector(".image-container").querySelector(".play-btn").style.visibility="hidden";
+            }
+        });
+      });
+</script>
+</html>

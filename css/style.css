@@ -1,10 +1,37 @@
+@font-face { 
+  font-family: 'PhonePeSansLight'; 
+  src: url("/home/karthiga/Downloads/-LPhonePeSansight-d84c55360ce241e165c7b10f0e143df2(1).woff2") format('woff2');
+}
+@font-face {
+  font-family: 'PhonePeSansRegular';
+  src: url("/home/karthiga/Downloads/PhonePeSans-Regular-00e335472573f867945b9dc74d9f23a7.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'PhonePeSansMedium';
+  src: url('https://www.phonepe.com/webstatic/6508/static/PhonePeSans-Medium-2c1ed5081892b87cddccba2c1e2c1030.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'PhonePeSansBold';
+  src: url('/home/karthiga/Downloads/PhonePeSans-Bold-3bc29f20b4df86219a0a40c7fe23d19c.woff2') format('woff2');
+}
+
+
+body{
+  overflow-x: hidden;
+  font-family: 'PhonePeSansLight',sans-serif;
+}
+
+.scrolled{
+  box-shadow: 0px 1.5px 1px #a7a6a6;
+}
+
 .navbar-brand{
     margin-top: -7px;
 }
 
 .nav-item{
-    font-size: 16px;
-    font-weight: 500;
+    font-size: .9375rem;
+    font-weight: 400;
     color: black;
     margin-right: 20px;
 }
@@ -14,102 +41,98 @@ a:hover{
 }
 
 .navbar{
-    /* fix navbar */
     overflow:  hidden !important;
     position: fixed !important;
     top: 0;
+    left:0;
     width: 100%;
-    z-index: 1;
-
-}
-
-
-.big-heading {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.5;
-    
-  }
-  
-  .download-button {
-    
-    margin: 5% 3% 5% 0;
-  }
-  .image-iphone {
-    margin-top: 20px;
-    width: 20%;
-    transform: rotate(20deg);
-    position: absolute;
-    right: 20%;
-  }
-
-  .background{
-    margin-top: 50px;
-    background-color: #6739B6;
-    color: #fff;
-    min-height: 350px;
-  }
-
-  #title {
-    text-align: left;
+    z-index: 999;
+    font-size: 15px;
+    font-weight: bolder;
+    /* font-famiy: 'PhonePeSansRegular', sans-serif; */
 }
 
 .heading1{
-    color: rgb(8, 8, 59);
-    font-size: 45px;
+  color: #361374;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -.57px;
+  line-height: 1.12;
 }
 
-.nt_insurance{
-    
-   width: 50%;
+.headingfont{
+  color: #323232;
+  font-size: 1.375rem;
+  font-weight: 400;
+  letter-spacing: -.33px;
+  line-height: 1.5;
+}
+
+.info{
+  color: #232028;
+  font-size: .875rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.4;
+  opacity: .7;
+  width: 90%;
+}
+
+a.watch-btn-container:hover .watch-btn {
+  cursor: pointer;
+  background-color:#371f7b;
+  border-color: #533093;
+}
+.watch-btn-container:hover .watch-btn span{
+  color: #ffffff;
 }
 
 .para{
-    text-align: center;
-    font-size: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  opacity: .8;
+  text-align: center;
+  width: 960px 
 }
 .hashtag{
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
     color: blueviolet;
     margin-top: -10px;
 }
 
 .heading2{
-    color: rgb(8, 8, 59);
-    font-size: 55px;
-    text-align: center;
+  color: #361968;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: -.63px;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0,0,0,.05);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  justify-content:center;
 }
-
-#press {
-    padding: 5% 1%;
-  }
-  
-  .press-img {
-    width: 8%;
-    margin: 20px 40px;
-  }
-  .roundedimg{
-    border-radius: 50%;
-    height: 100px;
-    display: block;
-    margin: 30px auto;
-  }
-
-  .grey-section{
-    background-color: #f5f5f5;
-    justify-content: center;
-    align-items: center;
-  }
 
   .partner{
     width: 100%;
   }
 
   .mySwiper{
-
     margin-top: 70px; 
+  }
+
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px; 
+    margin: 0 10px; 
+  }
+
+  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #533093;
   }
 
   .banner-text{
@@ -118,7 +141,6 @@ a:hover{
     text-align: left;
     color: white;
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-left: 90px;
   }
@@ -127,7 +149,6 @@ a:hover{
     text-align: left;
     color: rgba(13, 13, 59, 0.658);
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin-top: 25px;
     margin-left: -50px;
@@ -142,7 +163,7 @@ a:hover{
   }
   .banner-btn2{
     margin-top: 30px;
-    background-color: rgba(23, 23, 126, 0.829) !important; 
+    background-color: #5f1f9c !important; 
     /* outline-width: 0px !important;
     outline-color: rgba(20, 20, 70, 0.548) !important ; */
     color: white !important;
@@ -154,42 +175,48 @@ a:hover{
     text-align: left;
     color: rgb(78, 28, 124);
     font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-left: 118px;
   }
 
-  
 
- /* change pagination bullet size */
-.mySwiper .swiper-pagination-bullet {
-    width: 40px;
-    height: 40px;
-  }
-
-  swiper-container{
-    z-index: -1;
+  .hover-div:hover .hover-img-div{
+    transform: translateX(10px);
   }
 
   .card-head
-  {
-    
+  { 
     margin-top: -70px;
   }
 
   .card:hover{
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
-    
+    box-shadow: 0 20px 25px rgba(33,33,33,.2);
+    cursor: pointer;
     border: none !important;
   }
 
-  .img-secure{
+  .cardfonts{
+    color: #361968;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.33;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
 
-    position: absolute;
+  .hashtag{
+    text-align: center;
+    font-size: 16px;
+    color: blueviolet;
+    margin-top: -10px;
+}
+
+  .img-secure{
+   position: absolute;
    margin-top: 30px;
    width: 200px;
    height: 220px;
-    margin-left: 160px;
+   margin-left: 55px;
   }
 
   .trust-text{
@@ -197,11 +224,164 @@ a:hover{
     margin-top : 50px ;
     text-align: left;
     color: rgb(252, 251, 253);
-    font-family: 'Montserrat', sans-serif;
     font-weight:900;
     margin-left: 450px;
   }
+
+  .img-container{
+    position: relative;
+  }
+
+  .overlay-image {
+    position: absolute;
+    width: 1000px;
+    top:76px;
+    left: -141px;
+    z-index: 1;
+  }
+
+  h4.busfonts{
+    color: #6739b7;
+    /* cursor: pointer; */
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-weight: bold ;
+  }
+
+  p.innerfonts{
+    color: #5e5c5c;
+    font-size: 1rem;
+    /* font-weight: 200; */
+  }
+
+  .explorefont1{
+    color: #fff;
+    font-weight: lighter;
+  }
+
+  .explorefont2{
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: left;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .content ul,li {
+    list-style: none;
+    padding: 0; 
+  }
+
+  .column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .column:last-child {
+    margin-right: 0;
+  }
+  h3.footer-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2.29;
+    margin-bottom: 8px;
+  }
+  .sub-heading {
+    color: #000;
+    font-size: .875rem;
+    font-weight: 300;
+    letter-spacing: -.21px;
+    line-height: 2.43;
+    text-decoration: none;
+  }
+  h3.footer-heading a {
+    text-decoration: none;
+    color: inherit;
+  }
   
   
+  /* extras */
   
-  
+  #carou-container{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#carous{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+}
+
+#carous > .carou{
+    border-radius: 30px;
+    background-color: transparent;
+    position: absolute;
+    transition-duration: 0.3s;
+    transition-property: transform;
+
+}
+
+#carous > .carou > img{
+    object-fit:cover;
+    background-color: transparent;
+}
+
+#carou-1{
+    z-index: 1;
+    left: 3%;
+    transform: scale(80%);
+    filter: brightness(0.6);
+}
+#carou-2{
+    z-index: 2;
+    left: 18%;
+    transform: scale(87%);
+    filter: brightness(0.6);
+}
+#carou-3{
+    z-index: 3;
+    left: 34%;
+    transform: scale(95%);
+}
+#carou-4{
+    z-index: 2;
+    left:50%;
+    transform: scale(87%);
+    filter: brightness(0.6);
+}
+#carou-5{
+    z-index: 1;
+    left: 65%;
+    transform: scale(80%);
+    filter: brightness(0.6);
+}
+.play-btn{
+    position: absolute; bottom: 20%; left: 40%;
+}
+.image-btn{
+    overflow: hidden;
+}
+.image-btn{
+    border-radius: 50px;
+}
+.image-container .image-btn img{
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover .image-btn img{
+    transform: scale(1.05);
+}
